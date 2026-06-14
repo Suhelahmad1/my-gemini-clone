@@ -198,3 +198,67 @@
     gap: 5px;
   }
 }
+
+/* =======================================================
+   📱 MOBILE & TABLET RESPONSIVE REBOOT (Fixes broken layout)
+   ======================================================= */
+@media (max-width: 768px) {
+  /* 1. Greet Text Size Choti Karo */
+  .greet {
+    margin: 20px 0px;
+    font-size: 34px; /* Phone par 56px bohot bada tha */
+    padding: 10px 15px;
+  }
+
+  /* 2. Chat Output Areas Ki Max-Height Set Karo */
+  .result {
+    max-height: 65vh;
+    padding: 0px 15px;
+  }
+
+  /* 3. Cards Section Grid Adjustments */
+  .main .cards {
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    gap: 10px;
+    padding: 15px;
+  }
+
+  .main .card {
+    height: 130px;
+    padding: 12px;
+  }
+
+  .main .card p {
+    font-size: 13px;
+  }
+
+  /* 4. Search Box Layout (SABSE MAIN PANGA IDHAR THA) */
+  .search-box {
+    padding: 10px 15px;
+    gap: 10px; /* Gap kam kiya taaki items fit ho sakein */
+  }
+
+  .search-box input {
+    flex: 1; /* Input ko poora space lene do */
+    width: 100%; /* Fixed 150px hata diya */
+    font-size: 15px;
+    padding: 4px;
+  }
+
+  .search-box img {
+    width: 20px; /* Icons thode chote kar diye */
+  }
+
+  .search-box div {
+    gap: 10px; /* Inner icons ka gap smooth kiya */
+  }
+
+  .main-bottom {
+    padding: 10px 10px; /* Padding tight ki taaki border se na takraye */
+  }
+
+  .main .bottom-info {
+    font-size: 11px;
+    padding: 0 5px;
+  }
+}
