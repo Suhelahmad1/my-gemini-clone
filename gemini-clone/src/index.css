@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Outfit;
+}
+
+#root {
+  height: 100vh; /* ✅ Viewport locked */
+  width: 100vw;
+  display: flex;
+  overflow: hidden; /* Avoid main window layout splitting */
+  animation: fadeIn 1.5s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* =======================================================
+   🌓 DARK THEME OVERRIDES CONFIG (Point 4 - New Features)
+   ======================================================= */
+body.dark-theme {
+  background-color: #131314;
+  color: #e3e3e3;
+}
+
+body.dark-theme .sidebar {
+  background-color: #1e1f20;
+}
+
+body.dark-theme .sidebar .new-chat {
+  background-color: #1a1a1c;
+  color: #888;
+}
+
+body.dark-theme .sidebar .recent-entry {
+  color: #e3e3e3;
+}
+
+body.dark-theme .sidebar .recent-entry:hover {
+  background-color: #282a2c;
+}
+
+body.dark-theme .delete-bin:hover {
+  color: #ff5546 !important;
+}
+
+body.dark-theme .main .nav {
+  color: #e3e3e3;
+}
+
+body.dark-theme .main .card {
+  background-color: #1e1f20;
+}
+
+body.dark-theme .main .card p {
+  color: #c4c7c5;
+}
+
+body.dark-theme .main .card:hover {
+  background-color: #282a2c;
+}
+
+body.dark-theme .main .card img {
+  background-color: #131314;
+}
+
+body.dark-theme .search-box {
+  background-color: #1e1f20;
+}
+
+body.dark-theme .search-box input {
+  color: #e3e3e3;
+}
+
+body.dark-theme .main-bottom {
+  background: #131314;
+}
+
+body.dark-theme .bottom-info {
+  color: #888;
+}
+
+body.dark-theme .loader hr {
+  background: linear-gradient(to right, #004bbb, #1e1f20, #004bbb);
+  background-color: #222;
+}
+
+/* =======================================================
+   💻 CODE BLOCK & MARKDOWN STYLING (For react-markdown)
+   ======================================================= */
+.markdown-body-wrapper pre {
+  background-color: #1e1f22;
+  color: #f8f8f2;
+  padding: 16px;
+  border-radius: 8px;
+  overflow-x: auto;
+  margin: 15px 0;
+  border: 1px solid #2f3136;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.markdown-body-wrapper code {
+  font-size: 14px;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+.markdown-body-wrapper pre code {
+  background-color: transparent;
+  padding: 0;
+  border-radius: 0;
+}
+
+body.dark-theme .markdown-body-wrapper pre {
+  background-color: #090a0b;
+  border-color: #1e1f20;
+}
+
+body.dark-theme img[src*="history_icon"],
+body.dark-theme img[src*="menu_icon"],
+body.dark-theme img[src*="plus_icon"],
+body.dark-theme img[src*="question_icon"],
+body.dark-theme img[src*="setting_icon"],
+body.dark-theme img[src*="gallery_icon"],
+body.dark-theme img[src*="mic_icon"],
+body.dark-theme img[src*="light"] {
+  filter: invert(1) brightness(2) !important;
+}
