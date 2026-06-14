@@ -1,16 +1,39 @@
-# React + Vite
+# 🚀 Gemini AI Clone
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A fully responsive, high-performance Gemini AI clone built using **React.js**, **Vite**, and the official **Google Gemini API**. This application mimics the core functionalities of the Gemini web app, featuring dynamic markdown rendering, local chat history preservation, and an integrated dark mode experience.
 
-Currently, two official plugins are available:
+🌐 **Live Demo:** [my-gemini-clone.vercel.app](https://my-gemini-clone.vercel.app)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## ✨ Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Real-time AI Chat:** Seamless integration with Google's Gemini API for instantaneous, context-aware responses.
+- **Dynamic Markdown Support:** Beautiful rendering of code blocks, lists, and formatted text using `react-markdown`.
+- **Persistent Local History:** Chat queries are synchronized and stored in `localStorage` so users don't lose their history on refresh.
+- **Dynamic Dark/Light Mode:** Full UI theme toggle that remembers user preference across sessions.
+- **100% Responsive Design:** Tailored layout optimized flawlessly for Mobile, Tablet, and Desktop screens.
+- **Smart Auto-Scroll:** Chat logs automatically scroll down as the AI streams its answers.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠️ Tech Stack
+
+- **Frontend Framework:** React.js (Functional Components, Hooks, Context API)
+- **Build Tool:** Vite (For ultra-fast bundling and reloading)
+- **Styling:** Pure Custom CSS3 (with Mobile-first Media Queries)
+- **API Integration:** `@google/generative-ai` package
+- **Markdown Parsing:** `react-markdown`
+
+---
+
+## 📦 Installation & Setup
+
+Follow these steps to run the project locally on your machine:
+
+### 1. Clone the Repository
+
+```bash
+git clone [https://github.com/Suhelahmad1/my-gemini-clone.git](https://github.com/Suhelahmad1/my-gemini-clone.git)
+cd my-gemini-clone/gemini-clone
+```
