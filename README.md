@@ -2,7 +2,7 @@
 
 A fully responsive, high-performance Gemini AI clone built using **React.js**, **Vite**, and the official **Google Gemini API**. This application mimics the core functionalities of the Gemini web app, featuring dynamic markdown rendering, local chat history preservation, and an integrated dark mode experience.
 
-🌐 **Live Demo:** [my-gemini-clone.vercel.app](my-gemini-clone-qgus-git-main-suhel-ahmads-projects.vercel.app)
+🌐 **Live Demo:** [https://my-gemini-clone-qgus-git-main-suhel-ahmads-projects.vercel.app/](https://my-gemini-clone-qgus-git-main-suhel-ahmads-projects.vercel.app/)
 
 ---
 
@@ -27,13 +27,9 @@ A fully responsive, high-performance Gemini AI clone built using **React.js**, *
 
 ---
 
-## 📦 Installation & Setup
+## ⚙️ Environment Variables Setup
 
-Follow these steps to run the project locally on your machine:
+Create a `.env` file in the root of your frontend directory before running the application locally:
 
-### 1. Clone the Repository
-
-```bash
-git clone [https://github.com/Suhelahmad1/my-gemini-clone.git](https://github.com/Suhelahmad1/my-gemini-clone.git)
-cd my-gemini-clone/gemini-clone
-```
+```env
+VITE_GEMINI_API_KEY=your_official_google_gemini_api_key
