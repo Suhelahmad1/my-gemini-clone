@@ -2,7 +2,7 @@
 
 A fully responsive, high-performance Gemini AI clone built using **React.js**, **Vite**, and the official **Google Gemini API**. This application mimics the core functionalities of the Gemini web app, featuring dynamic markdown rendering, local chat history preservation, and an integrated dark mode experience.
 
-🌐 **Live Demo:** [my-gemini-clone.vercel.app](https://my-gemini-clone.vercel.app)
+🌐 **Live Demo:** [my-gemini-clone.vercel.app](my-gemini-clone-qgus-git-main-suhel-ahmads-projects.vercel.app)
 
 ---
 
